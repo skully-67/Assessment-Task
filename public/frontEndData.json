@@ -22,5 +22,13 @@
 "about":"Edit SQLite3 files like you would in spreadsheet applications.",
 "image":"https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.85/1690893830873/Microsoft.VisualStudio.Services.Icons.Default",
 "language":"SQL"
+},
+{
+"extID":4,
+"name":"Live Server",
+"hyperlink":"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
+"about":"Launch a development local server with live reload.",
+"image":"images/liveserver.png",
+"language":"HTML"
 }
 ]
