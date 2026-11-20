@@ -1,8 +1,8 @@
 -- database: ./data_source.db
 
-SELECT * FROM contact_list;
+-- SELECT * FROM contact_list;
 
--- CREATE TABLE extension(extID INTERGER NOT NULL PRIMARY KEY,name TEXT NOT NULL, hyperlink TEXT NOT NULL,about TEXT NOT NULL,image TEXT NOT NULL,language TEXT NOT NULL);
+CREATE TABLE Liverpool_Squad (playerID INTEGER PRIMARY KEY, name TEXT NOT NULL, description TEXT, origin TEXT, image TEXT)
 
 -- INSERT INTO extension(extID,name,hyperlink,about,image,language) VALUES (X,"","","","",""); -- Insert template
 
