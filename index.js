@@ -9,42 +9,20 @@
 const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database("database/data_source.db");
 
-let myString = "[\n";
-db.all("SELECT * FROM extension", function (err, rows) {
-  let myCounter = 0;
-  rows.forEach(function (row) {
-    // console.log(row.extID + ": " + row.name + ": " + row.hyperlink + ": " + row.about + ": " + row.image + ": " + row.language);
-    myString =
-      myString +
-      '{\n"extID":' +
-      row.extID +
-      ',\n"name":"' +
-      row.name +
-      '",\n"hyperlink":"' +
-      row.hyperlink +
-      '",\n"about":"' +
-      row.about +
-      '",\n"image":"' +
-      row.image +
-      '",\n"language":"' +
-      row.language;
-    myCounter++;
-    if (myCounter == rows.length) {
-      myString = myString + '"\n}\n';
-    } else {
-      myString = myString + '"\n},\n';
-    }
-  });
+const fs = require("fs");
 
-  // console.log(myString);
-  var fs = require("fs");
-  fs.writeFile("public/frontEndData.json", myString + "]", function (err) {
-    if (err) {
-      console.log(err);
-    }
-  });
+db.all("SELECT * FROM Liverpool_FC_Squad", function (err, rows) {
+  if (err) {
+    console.log(err.message);
+    return;
+  }
+
+  const jsonData = JSON.stringify(rows, null, 2);
+
+  fs.writeFileSync("public/frontEndData.json", jsonData);
+
+  console.log("Catalogue JSON updated");
 });
-
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -71,15 +49,15 @@ app.post("/add.html", function (req, res) {
             req.body.name +
             " we have added your email " +
             req.body.email +
-            " to our distribution list."
+            " to our distribution list.",
         );
-      }
+      },
     );
   });
 });
 
 app.listen(5000, () =>
   console.log(
-    "Server is running on Port 3000, visit http://localhost:3000/ or http://127.0.0.1:3000 to access your website"
-  )
+    "Server is running on Port 3000, visit http://localhost:3000/ or http://127.0.0.1:3000 to access your website",
+  ),
 );

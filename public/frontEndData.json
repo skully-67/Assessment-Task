@@ -1,34 +1,90 @@
 [
-{
-"extID":1,
-"name":"Render CR LF",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf",
-"about":"Displays the line ending symbol and optionally extra whitespace when 'Render whitespace' is turned on.",
-"image":"https://medo64.gallerycdn.vsassets.io/extensions/medo64/render-crlf/1.7.1/1689315206970/Microsoft.VisualStudio.Services.Icons.Default",
-"language":"#BASH"
-},
-{
-"extID":2,
-"name":"Start GIT BASH",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash",
-"about":"Adds a bash command to VSCode that allows you to start git-bash in the current workspace's root folder.",
-"image":"https://mccarter.gallerycdn.vsassets.io/extensions/mccarter/start-git-bash/1.2.1/1499505567572/Microsoft.VisualStudio.Services.Icons.Default",
-"language":"#BASH"
-},
-{
-"extID":3,
-"name":"SQLite3 Editor",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor",
-"about":"Edit SQLite3 files like you would in spreadsheet applications.",
-"image":"https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.85/1690893830873/Microsoft.VisualStudio.Services.Icons.Default",
-"language":"SQL"
-},
-{
-"extID":4,
-"name":"Live Server",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
-"about":"Launch a development local server with live reload.",
-"image":"images/liveserver.png",
-"language":"HTML"
-}
+  {
+    "playerID": 1,
+    "name": "Alisson Becker",
+    "position": "Goal Keeper",
+    "birth_country": "Brazil",
+    "origin": "October 2, 1992.",
+    "image": "images/alissonbecker.png"
+  },
+  {
+    "playerID": 2,
+    "name": "Jeremie Frimpong",
+    "position": "Right Back",
+    "birth_country": "Netherlands",
+    "origin": "December 10, 2000.",
+    "image": "images/jeremiefrimpong.png"
+  },
+  {
+    "playerID": 3,
+    "name": "Virgil Van Dijk",
+    "position": "Center Back",
+    "birth_country": "Netherlands",
+    "origin": "July 8, 1991.",
+    "image": "images/virgilvandijk.png"
+  },
+  {
+    "playerID": 4,
+    "name": "Ronald Araujo",
+    "position": "Center Back",
+    "birth_country": "Uruguay",
+    "origin": "March 7, 1999.",
+    "image": "images/ronaldaraujo.png"
+  },
+  {
+    "playerID": 5,
+    "name": "Milos Kerkez",
+    "position": "Left Back",
+    "birth_country": "Serbia",
+    "origin": "November 7, 2003.",
+    "image": "images/miloskerkez.png"
+  },
+  {
+    "playerID": 6,
+    "name": "Dominik Szoboszlai",
+    "position": "Midfielder",
+    "birth_country": "Hungary",
+    "origin": "October 25, 2000.",
+    "image": "images/dominikszoboszlai.png"
+  },
+  {
+    "playerID": 7,
+    "name": "Alexis Mac Allister",
+    "position": "Midfielder",
+    "birth_country": "Argentina",
+    "origin": "December 24, 1998.",
+    "image": "images/alexismacallister.png"
+  },
+  {
+    "playerID": 8,
+    "name": "Rio Ngumoha",
+    "position": "Winger",
+    "birth_country": "England",
+    "origin": "August 29, 2008",
+    "image": "images/riongumoha.png"
+  },
+  {
+    "playerID": 9,
+    "name": "Florian Wirtz",
+    "position": "Midfielder",
+    "birth_country": "Germany",
+    "origin": "May 3, 2003.",
+    "image": "images/florianwirtz.png"
+  },
+  {
+    "playerID": 10,
+    "name": "Bradley Barcola",
+    "position": "Forward",
+    "birth_country": "France",
+    "origin": "September 2, 2002.",
+    "image": "images/bradleybarcola.png"
+  },
+  {
+    "playerID": 11,
+    "name": "Alexander Isak",
+    "position": "Striker",
+    "birth_country": "Sweden",
+    "origin": "September 21, 1999.",
+    "image": "images/alexanderisak.png"
+  }
 ]
