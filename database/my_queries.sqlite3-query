@@ -2,7 +2,7 @@
 
 -- SELECT * FROM contact_list;
 
-CREATE TABLE Liverpool_Squad (playerID INTEGER PRIMARY KEY, name TEXT NOT NULL, description TEXT, origin TEXT, image TEXT)
+CREATE TABLE Liverpool_FC_Squad (playerID INTEGER PRIMARY KEY, name TEXT NOT NULL, position TEXT, birth_country TEXT, origin TEXT, image TEXT)
 
 -- INSERT INTO extension(extID,name,hyperlink,about,image,language) VALUES (X,"","","","",""); -- Insert template
 
